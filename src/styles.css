@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600;700&family=Unna:wght@400;700&family=Dancing+Script:wght@400;600&family=Qwigley&display=swap');
+
+:root {
+  /* Monochrome palette */
+  --color-bg: #f7f7f7;
+  --color-card: #ffffff;
+  --color-accent: #222222;
+  --color-accent-soft: #555555;
+  --color-text: #111111;
+  --color-muted: #777777;
+
+  --font-heading: 'Unna', serif;
+  --font-body: 'Unna', serif;
+
+  --radius-card: 18px;
+  --shadow-soft: 0 22px 45px rgba(0, 0, 0, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  background: radial-gradient(
+    circle at top,
+    #f5f5f5 0,
+    #e5e5e5 40%,
+    #d4d4d4 75%,
+    #c2c2c2 100%
+  );
+  color: var(--color-text);
+  min-height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  app-root {
+    width: 100%;
+    max-width: 760px;
+  }
