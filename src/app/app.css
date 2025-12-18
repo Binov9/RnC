@@ -21,7 +21,8 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('./img/wed3.jpg');
+
+  /*background-image: url('./img/wed3.jpg');*/
   background-size: cover;
   background-position: 45%;
   background-repeat: no-repeat;
