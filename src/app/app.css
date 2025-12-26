@@ -6,7 +6,7 @@
 }
 
 .save-the-date-shell {
-  --bg-image-opacity: 0.4;
+  --bg-image-opacity: 0.7;
   width: 100%;
   max-width: 760px;
   min-height: 100vh;
@@ -22,11 +22,12 @@
   position: absolute;
   inset: 0;
 
-  /*background-image: url('./img/wed3.jpg');*/
+  background-image: url('./img/rnc-pic.3.jpeg');
   background-size: cover;
-  background-position: 45%;
+  background-position: 50%;
   background-repeat: no-repeat;
   opacity: var(--bg-image-opacity);
+  filter: grayscale(100%);
   pointer-events: none;
   z-index: 0;
 }
@@ -114,6 +115,9 @@
 
 .slide-inner {
   max-width: 540px;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
 }
 
 /* Subtle staggered entrance animation for content inside the slide */
@@ -190,6 +194,22 @@
   letter-spacing: 0.18em;
 }
 
+/* Section 1: Save the Date */
+.save-date-section {
+  margin-top: -210px;
+  position: absolute;
+  top: 180px;
+  left: 51%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 540px;
+}
+
+.save-date-section .hero-title {
+  margin-bottom: 0;
+  font-size: clamp(5.5rem, 6.5vw, 7rem);
+}
+
 .hero-title--line .hero-word {
   display: block;
 }
@@ -242,11 +262,41 @@
   margin-bottom: 2.4rem;
 }
 
+/* Section 2: Couple Names */
+.couple-names-section {
+  margin-left: -17px;
+  margin-top: 11rem;
+  /*position: absolute;*/
+  top: 561px;
+  left: 192px;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 540px;
+  position: relative;
+}
+
+.couple-names-section .names-row {
+  margin-top: 0;
+}
+
+/* Section 3: Date and Location */
+.date-location-section {
+  margin-top: 12rem;
+  position: absolute;
+  top: 650px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 540px;
+  text-align: center;
+}
+
 .names-row {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+  padding-left: 26px;
 }
 
 .name-block {
@@ -255,17 +305,21 @@
 }
 
 .name-block--left {
+  margin-left: -230px;
+  position: absolute;
   text-align: left;
 }
 
 .name-block--right {
+  margin-left: 234px;
+  position: absolute;
   text-align: right;
 }
 
 .name-line {
   display: block;
   font-family: 'Abhaya Libre', serif;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   letter-spacing: 0.26em;
   text-transform: uppercase;
   color: var(--color-text);
@@ -280,7 +334,17 @@
   text-align: right;
 }
 
+.name-line--left {
+  padding-left: 5px;
+}
+
+.name-line--right {
+  padding-right: 9px;
+}
+
 .ampersand-large {
+  position: absolute;
+  margin-left: -5px;
   font-family: 'Qwigley', cursive;
   font-size: 7.2rem;
   line-height: 1;
